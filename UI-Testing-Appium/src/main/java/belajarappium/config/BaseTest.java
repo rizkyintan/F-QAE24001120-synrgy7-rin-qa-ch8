@@ -1,19 +1,16 @@
+package belajarappium.config;
+
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
+public class BaseTest {
 
-public class LoginTest {
+    protected static AndroidDriver driver;
+    protected static WebDriverWait wait;
 
-    //Login credentials
-    String username = "standard_user";
-    String password = "secret_sauce";
-
-    AndroidDriver driver;
-
-    @BeforeTest
-    public void setup(){
-
+    public static void setupDriver(){
         //For Android setup capabilities is mandatory
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
@@ -25,25 +22,17 @@ public class LoginTest {
         capabilities.setCapability("appActivity", "com.swaglabsmobileapp.MainActivity");
 
         driver = new AndroidDriver(capabilities);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
-    @Test
-    public void loginTest(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.inputUsername(username);
-        loginPage.inputPassword(password);
-        loginPage.clickLoginButton();
-
-        //assertion: verify login success
-        HomePage homePage = new HomePage(driver);
-        homePage.textProductsisDisplayed();
-    }
-
-    @AfterTest
-    public void closeSession(){
+    public static void stopDriver(){
         if (driver != null){
             driver.quit();
         }
     }
 
+    public static void resetApp() {
+        driver.terminateApp("com.swaglabsmobileapp");
+        driver.activateApp("com.swaglabsmobileapp");
+    }
 }

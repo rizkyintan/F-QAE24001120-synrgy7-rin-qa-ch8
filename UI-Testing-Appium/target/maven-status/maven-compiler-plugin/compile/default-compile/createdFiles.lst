@@ -1,0 +1,9 @@
+belajarappium\config\CucumberHooks.class
+belajarappium\pages\CartPage.class
+belajarappium\pages\CompletePage.class
+belajarappium\pages\CheckoutPage.class
+belajarappium\pages\HomePage.class
+belajarappium\pages\LoginPage.class
+belajarappium\config\BaseTest.class
+belajarappium\pages\OverviewPage.class
+belajarappium\config\CucumberRunnerTest.class

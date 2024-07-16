@@ -9,5 +9,8 @@
         <module name="UI-Testing-Appium" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="UI-Testing-Gherkin-Cucumber" target="22" />
+    </bytecodeTargetLevel>
   </component>
 </project>

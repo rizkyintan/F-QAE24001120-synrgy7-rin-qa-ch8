@@ -1,0 +1,6 @@
+stepDefinitions\CheckoutSteps.class
+stepDefinitions\LoginSteps.class
+stepDefinitions\OverviewSteps.class
+stepDefinitions\HomeSteps.class
+stepDefinitions\CartSteps.class
+stepDefinitions\CompleteSteps.class
