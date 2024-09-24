@@ -65,6 +65,6 @@ Through these test scripts, the main objectives are:
 
 To get started with running the Android test scripts in this repository, follow these steps:
 
-1. **Clone the repository**: `git clone [repository](https://github.com/rizkyintan/F-QAE24001120-synrgy7-rin-qa-ch8.git)`
+1. **Clone the repository**: git clone [repository](https://github.com/rizkyintan/F-QAE24001120-synrgy7-rin-qa-ch8.git)
 2. **Install dependencies**: Ensure you have Java, Appium, and the necessary Android SDK set up on your machine.
 3. **Run the test scripts**: Use your preferred IDE or command line to execute the test cases on an Android emulator or real device.
