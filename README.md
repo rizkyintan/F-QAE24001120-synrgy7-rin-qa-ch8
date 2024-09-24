@@ -8,6 +8,10 @@ Hi folks! I am currently learning Software Quality Assurance at SYNRGY Batch 7. 
 * **Test 3: Sorting Items from Low to High Prices**
 * **Test 4: Checkout Process**
 
+### Behavior-Driven Development (BDD) Approach 🧑‍💻
+
+In addition to using Appium for UI automation, I implemented a **BDD framework** in this project using **Gherkin** syntax and **Cucumber**. This approach allows for better collaboration and understanding between technical and non-technical team members. The tests are written in an easy-to-understand format, where scenarios describe the expected behavior of the application in a user-friendly way.
+
 ### Detailed Overview of Test Cases 📝
 
 #### Test 1: Login Successful ✅
@@ -55,11 +59,14 @@ Through these test scripts, the main objectives are:
 2. **Implementing Page Object Model**: Utilize POM structure for efficient test case management and better code organization.
 3. **Automating Mobile User Actions**: Gain experience in automating typical user actions on Android apps, such as login, product sorting, and checkout.
 4. **Verifying Mobile UI Elements**: Learn techniques to verify mobile UI elements and their behavior using Appium.
+5. **Using BDD with Gherkin and Cucumber**: Enhance collaboration by writing tests in a human-readable format with Gherkin, and running them using Cucumber.
 
 ### Repository Structure 📁
 
-- **/src/test/java/test_cases**: Contains detailed descriptions and implementation of each test case for Android UI automation.
-- **/src/main/java/page**: Includes page object model classes for organizing Android UI elements and their interactions.
+- **/src/main/java/belajarappium/config**: Contains base configuration files such as `BaseTest.java`, `CucumberHooks.java`, and `CucumberRunnerTest.java` for setting up and running tests.
+- **/src/main/java/belajarappium/pages**: Includes Page Object Model (POM) classes like `LoginPage.java`, `HomePage.java`, and `CartPage.java` to interact with different UI elements in the Android app.
+- **/src/test/java/stepDefinitions**: Contains Cucumber step definitions (e.g., `LoginSteps.java`, `CheckoutSteps.java`) that map Gherkin steps to actual code for executing tests.
+- **/src/test/java/features**: Holds the feature files written in Gherkin (e.g., `login.feature`, `checkout.feature`) which define the behavior of the app through test scenarios.
 
 ### Getting Started 🚀
 
